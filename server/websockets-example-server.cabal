@@ -1,0 +1,23 @@
+name:                websockets-example-server
+version:             0.1.0.0
+-- synopsis:
+-- description:
+author:              Jonathan King
+maintainer:          jonathanlking@me.com
+copyright:           Copyright: (c) 2017 Jonathan King
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable websockets-example-server
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  default-extensions:  NoImplicitPrelude
+                     , OverloadedStrings
+  build-depends:       base >= 4.7 && < 5
+                     , foundation
+                     , websockets
+                     , text
+                     , warp
+                     , wai-app-static
